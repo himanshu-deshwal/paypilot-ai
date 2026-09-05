@@ -1,4 +1,3 @@
-## 🚀 Future Scope
 
 PayPilot AI can be extended with:
 
@@ -57,3 +56,14 @@ Next Best Action
    ↙       ↓        ↘
  Retry   Alternate  Message
          Payment
+## 🚀 Future Scope
+
+PayPilot AI can be extended with:
+
+- Razorpay test-mode integration
+- Real-time payment webhooks
+- Transaction-level machine learning models
+- LLM-based personalized customer communication
+- Merchant analytics dashboard
+- A/B testing of recovery strategies
+- Privacy controls, audit logs, and human approval workflows
