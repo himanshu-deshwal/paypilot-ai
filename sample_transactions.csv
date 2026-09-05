@@ -1,0 +1,6 @@
+amount,payment_method,attempts,customer_value,failure_reason
+1499,UPI,1,Regular,Failed - timeout
+4999,Card,0,High-value,Failed - bank decline
+799,UPI,2,New,Failed - insufficient funds
+2499,Net Banking,1,Regular,Pending
+999,Wallet,0,New,Successful
