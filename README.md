@@ -1,13 +1,4 @@
-
-PayPilot AI can be extended with:
-
-- Razorpay test-mode integration
-- Real-time payment webhooks
-- Transaction-level machine learning models
-- LLM-based personalized customer communication
-- Merchant analytics dashboard
-- A/B testing of recovery strategies
-- Privacy controls, audit logs, and human approval workflows# PayPilot AI 💳
+# PayPilot AI 💳
 
 **AI-powered payment recovery and customer growth agent**
 
@@ -23,15 +14,15 @@ A recovery system should not simply retry every failed payment. It should consid
 
 PayPilot AI uses a transparent decision engine to:
 
-- estimate payment recovery probability
-- prioritize transactions based on recovery potential
-- recommend the next best action
-- generate customer-friendly recovery messaging
-- reduce unnecessary repeated retries
-- account for retry fatigue
-- handle pending payments without encouraging duplicate charges
+- Estimate payment recovery probability
+- Prioritize transactions based on recovery potential
+- Recommend the next best action
+- Generate customer-friendly recovery messaging
+- Reduce unnecessary repeated retries
+- Account for retry fatigue
+- Handle pending payments without encouraging duplicate charges
 
-### Next-best actions
+### Next-best Actions
 
 Depending on the transaction context, PayPilot can recommend:
 
@@ -56,14 +47,3 @@ Next Best Action
    ↙       ↓        ↘
  Retry   Alternate  Message
          Payment
-## 🚀 Future Scope
-
-PayPilot AI can be extended with:
-
-- Razorpay test-mode integration
-- Real-time payment webhooks
-- Transaction-level machine learning models
-- LLM-based personalized customer communication
-- Merchant analytics dashboard
-- A/B testing of recovery strategies
-- Privacy controls, audit logs, and human approval workflows
