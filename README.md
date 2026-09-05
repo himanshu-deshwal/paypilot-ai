@@ -2,58 +2,48 @@
 
 **AI-powered payment recovery and customer growth agent**
 
-PayPilot AI is a prototype for the **AI Growth & Agentic Commerce** track. It analyzes a payment situation and recommends the next best action to reduce payment drop-offs and improve customer conversion.
+PayPilot AI is a prototype built for the **AI Growth & Agentic Commerce** track. It analyzes a payment situation, estimates recovery potential, and recommends the next best action to reduce payment drop-offs while maintaining a good customer experience.
 
-## Problem
+## 🎯 Problem
 
-Online businesses lose revenue when payments fail because of bank declines, timeouts, insufficient funds, or repeated attempts. Manual recovery can be slow and can also annoy customers with unnecessary retries.
+Online businesses lose revenue when payments fail because of bank declines, timeouts, insufficient funds, or repeated attempts.
 
-## Solution
+A recovery system should not simply retry every failed payment. It should consider the payment context, previous attempts, customer value, and failure reason before deciding what to do next.
 
-PayPilot AI uses a decision engine to:
+## 💡 Solution
+
+PayPilot AI uses a transparent decision engine to:
 
 - estimate payment recovery probability
-- prioritize recoverable transactions
-- recommend a smart retry, alternate payment method, or personalized recovery message
-- generate a customer-friendly recovery message
-- avoid aggressive retries after repeated failures
+- prioritize transactions based on recovery potential
+- recommend the next best action
+- generate customer-friendly recovery messaging
+- reduce unnecessary repeated retries
+- account for retry fatigue
+- handle pending payments without encouraging duplicate charges
 
-## Demo
+### Next-best actions
 
-The prototype runs in Streamlit and uses simulated transaction inputs. No real payment credentials are required.
+Depending on the transaction context, PayPilot can recommend:
 
-### Run locally
+- **Smart retry**
+- **Offer alternate payment**
+- **Personalized recovery message**
+- **Monitor + notify**
+- **Upsell / retention** for successful payments
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-## Architecture
+## 🧠 How It Works
 
 ```text
 Transaction Input
        ↓
 PayPilot Decision Engine
        ↓
-Risk + Customer Context
+Failure + Retry + Customer Context
+       ↓
+Recovery Probability
        ↓
 Next Best Action
-   ↙      ↓       ↘
-Retry   Alternate  Message
-       Payment
-```
-
-## Future scope
-
-- Razorpay test-mode integration
-- real-time payment webhooks
-- transaction-level ML model
-- LLM-based personalized communication
-- merchant analytics dashboard
-- A/B testing of recovery strategies
-- privacy, audit logs, and human approval controls
-
-## Disclaimer
-
-This is an internship prototype using simulated data. It does not process real payments and should not be used for production financial decisions without appropriate validation, security, compliance, and human oversight.
+   ↙       ↓        ↘
+ Retry   Alternate  Message
+         Payment
